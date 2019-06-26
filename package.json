@@ -18,6 +18,15 @@
   "scripts": {
     "test": "mocha",
     "test-min": "clear && ./node_modules/.bin/mocha --reporter=min --bail",
-    "watch": "./node_modules/.bin/onchange 'exercises/*.js' --initial -- npm run test-min -s"
-  }
+    "watch": "onchange 'exercises/*.js' --initial -- npm run test-min -s"
+  },
+  "bugs": {
+    "url": "https://github.com/oakmac/js201-exercises/issues"
+  },
+  "homepage": "https://github.com/oakmac/js201-exercises#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
