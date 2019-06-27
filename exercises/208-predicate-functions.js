@@ -62,7 +62,8 @@ function isOdd (num) {
         return false
     }
 }
-console.log(isOdd(5)); 
+
+console.log(isOdd(3.14))
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
 // and returns true or false if the city name is the capital of the state.
@@ -76,3 +77,17 @@ console.log(isOdd(5));
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+
+function isCapitalCity(state, city) {
+    let location = {
+        Austin: "Texas",
+        Houston: "Texas",
+        Juneau: "Alaska"
+    }
+
+    if () {
+        return true
+    } else {
+        return false
+    }
+}
