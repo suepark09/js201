@@ -31,8 +31,7 @@ function tipAmount (bill, service) {
 
 
 function totalAmount (bill, service) {
-    tipAmount (bill, service)
-    return tipAmount + bill
+    return tipAmount(bill, service) + bill;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,5 +43,8 @@ function totalAmount (bill, service) {
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
 function splitAmount (bill, service, num) {
-    return totalAmount / num 
+    return totalAmount (bill, service) / num 
 }
+
+console.log(splitAmount(40, 'fair', 2));
+
