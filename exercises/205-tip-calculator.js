@@ -45,6 +45,3 @@ function totalAmount (bill, service) {
 function splitAmount (bill, service, num) {
     return totalAmount (bill, service) / num 
 }
-
-console.log(splitAmount(40, 'fair', 2));
-

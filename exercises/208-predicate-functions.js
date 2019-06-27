@@ -48,25 +48,21 @@ function isVowel (letter) {
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 function isEven (num) {
-    if (num % 2 === 0) {
+    if (num % 2 === 0 && num === parseInt(num)) {
         return true
-    } else if ( Integer.parseInt(num)) {
-        return true
-    }else {
+    } else {
         return false 
     }
 }
 
 function isOdd (num) {
-    if (num % 2 === 0) {
-        return false
-    } else if ( Integer.parseInt(num)) {
+    if (num % 2 !== 0 && num === parseInt(num)) {
         return true
     } else {
-        return true 
+        return false
     }
 }
-
+console.log(isOdd(5)); 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
 // and returns true or false if the city name is the capital of the state.
