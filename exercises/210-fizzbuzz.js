@@ -9,3 +9,10 @@
 // Examples:
 // fizzbuzz(3) --> '..fizz'
 // fizzbuzz(15) --> '..fizz.buzzfizz..fizzbuzz.fizz..fizzbuzz'
+function fizzbuzz(num) {
+   for (let num = 1; num; num++) {
+        if (num % 3 == 0 && num & 5 == 0) {
+            return 
+        }
+   }
+}
