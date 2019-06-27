@@ -1,7 +1,7 @@
 // Write a function "hello" that takes one argument (a name), and returns a
 // string that says hello to the name.
 // Example: hello('Mustache') should return 'Hello, Mustache!'
-
+console.log("test")
 function hello (name) {
     return "Hello, " + name + "!"
 }
