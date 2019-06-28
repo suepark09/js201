@@ -10,9 +10,9 @@
 // fizzbuzz(3) --> '..fizz'
 // fizzbuzz(15) --> '..fizz.buzzfizz..fizzbuzz.fizz..fizzbuzz'
 function fizzbuzz(num) {
-   for (let num = 1; num; num++) {
+   for (let i = 1; i <= num; i++) {
         if (num % 3 == 0 && num & 5 == 0) {
-            return 
+            return "fizz"
         }
    }
 }
