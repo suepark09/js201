@@ -6,7 +6,7 @@
 // numberJoinerWhile(12, 14) --> '12_13_14'
 
 function numberJoinerWhile (num1, num2) {
-   let numbers =  while (num1 <= num2) {
+    while (num1 <= num2) {
         num++
     }
 }
@@ -15,7 +15,12 @@ function numberJoinerWhile (num1, num2) {
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
 
+function numberJoinerFor (num1, num2) {
+    for (let i = num1; i <= num2; i++) {
+        console.log(i)
+    }
 
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFancy" which does the same thing as "numberJoinerWhile",

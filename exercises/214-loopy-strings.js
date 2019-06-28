@@ -8,8 +8,12 @@
 // Example:
 // reverse("skoob") --> "books"
 
-function reverse (str) {
-    let splitString = str.splitString()
+function reverse (string) {
+    let splitString = string.split("");
+    let reverseArray = splitString.reverse();
+    let joinArray = reverseArray.join("");
+
+    return joinArray
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -20,7 +24,20 @@ function reverse (str) {
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
 
+function findLongestWord(string) {
+    let stringSplit = string.split(" ")
+    let longestWordCount = 0
 
+    for (let i = 0; i <= stringSplit.length; i++) {
+        if (stringSplit[i].length > longestWordCount) {
+            longestWordCount = stringSplit[i].length
+
+        }
+    }
+
+    
+
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "nicer"

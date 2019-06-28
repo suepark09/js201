@@ -63,7 +63,7 @@ function isOdd (num) {
     }
 }
 
-console.log(isOdd(3.14))
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
 // and returns true or false if the city name is the capital of the state.
@@ -80,15 +80,61 @@ console.log(isOdd(3.14))
 // isCapitalCity('Strawberry', 'Mango') --> false
 
 function isCapitalCity(state, city) {
-    let location = {
-        Austin: "Texas",
-        Houston: "Texas",
-        Juneau: "Alaska"
-    }
+    let capitals = {
+        Alabama: 'Montgomery',
+        Montana: 'Helena',
+        Alaska:    'Juneau',    
+        Nebraska: 'Lincoln',
+        Arizona: 'Phoenix',    
+        Nevada:    'Carson City',
+        Arkansas: 'Little Rock',    
+        'New Hampshire': 'Concord',
+        California:    'Sacramento',    
+        'New Jersey': 'Trenton',
+        Colorado: 'Denver',    
+        'New Mexico': 'Santa Fe',
+        Connecticut: 'Hartford',    
+        'New York': 'Albany',
+        Delaware: 'Dover',    
+        'North Carolina': 'Raleigh',
+        Florida: 'Tallahassee',    
+        'North Dakota': 'Bismarck',
+        Georgia: 'Atlanta',    
+        Ohio: 'Columbus',
+        Hawaii:    'Honolulu',    
+        Oklahoma: 'Oklahoma City',
+        Idaho: 'Boise',    
+        Oregon:    'Salem',
+        Illinois: 'Springfield',    
+        Pennsylvania: 'Harrisburg',
+        Indiana: 'Indianapolis',    
+        'Rhode Island': 'Providence',
+        Iowa: 'Des Moines',    
+        'South Carolina': 'Columbia',
+        Kansas:    'Topeka',    
+        'South Dakota': 'Pierre',
+        Kentucky: 'Frankfort',    
+        Tennessee: 'Nashville',
+        Louisiana: 'Baton Rouge',
+        Texas: 'Austin',
+        Maine: 'Augusta',
+        Utah: 'Salt Lake City',
+        Maryland: 'Annapolis',    
+        Vermont: 'Montpelier',
+        Massachusetts: 'Boston',    
+        Virginia: 'Richmond',
+        Michigan: 'Lansing',    
+        Washington:    'Olympia',
+        Minnesota:    'St. Paul',    
+        'West Virginia': 'Charleston',
+        Mississippi: 'Jackson',    
+        Wisconsin: 'Madison',
+        Missouri: 'Jefferson City',    
+        Wyoming: 'Cheyenne'
+    };
 
-    if () {
-        return true
-    } else {
-        return false
-    }
+    if 
+
+
+    
 }

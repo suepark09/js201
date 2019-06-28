@@ -21,3 +21,12 @@
 //
 // In this example we assume there is a function "hello" already defined and
 // that it prints "Hello, world!" to the console.
+function hello () {
+    return "Hello, world"
+}
+
+function callNTimes (times, hello) {
+    for (let hello = 1; hello <= times; hello++) {
+        return hello()
+    }
+}

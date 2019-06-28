@@ -33,7 +33,7 @@ function tipAmount (bill, service) {
 function totalAmount (bill, service) {
     return tipAmount(bill, service) + bill;
 }
-console.log(totalAmount(40, 'fair'))
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
 // and the number of people to split the bill between. It should return the final
