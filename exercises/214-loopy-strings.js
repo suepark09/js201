@@ -24,6 +24,14 @@ function reverse (string) {
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
 
+for(let i =0; i <= string.length; i++) {
+
+}
+
+
+
+
+
 function findLongestWord(string) {
     let stringSplit = string.split(" ")
     let longestWordCount = 0
@@ -47,7 +55,9 @@ function findLongestWord(string) {
 // Example:
 // nicer('mom get the heck in here and bring me a darn sandwich.')
 // > 'mom get the in here and bring me a sandwich.'
-
+function nicer() {
+    
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +68,9 @@ function findLongestWord(string) {
 // Examples:
 // capitalizeAll('hello world') --> 'Hello World'
 // capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
+function capitalizeAll (sentence) {
 
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
