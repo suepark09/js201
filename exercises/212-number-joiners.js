@@ -6,9 +6,13 @@
 // numberJoinerWhile(12, 14) --> '12_13_14'
 
 function numberJoinerWhile (num1, num2) {
-    while (num1 <= num2) {
-        num++
+	let items = []
+	let i = num1
+    while (i <= num2) {
+        items.push(i++)
     }
+
+	return items.join("_")
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -16,10 +20,11 @@ function numberJoinerWhile (num1, num2) {
 // except using a "for" loop internally.
 
 function numberJoinerFor (num1, num2) {
+    let items = []; 
     for (let i = num1; i <= num2; i++) {
-        console.log(i)
+        items.push(i)
     }
-
+	return items.join("_")
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,3 +35,14 @@ function numberJoinerFor (num1, num2) {
 // numberJoinerFancy(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerFancy(1, 5, '~') --> 1~2~3~4~5
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
+function numberJoinerFancy(num1, num2, sym) {
+    let items = []
+    for(let i = num1; i <= num2; i++) {
+        items.push(i)
+    }
+    if (sym === undefined) {
+        return items.join("_")
+    } else {
+        return items.join(sym)
+    }
+}
