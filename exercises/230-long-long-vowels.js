@@ -8,3 +8,15 @@
 // 'Cheeeeese'
 // > longLongVowels('Man')
 // 'Man'
+
+function longvowels(str) {
+
+	if(str.includes("ee") === true ) {
+	return str.replace("ee", "eeeee")
+	} else if (str.includes("oo") === true) {
+	return str.replace("oo", "ooooo")
+	} else if (str.includes("uu") === true) {
+	return str.replace("uu", "uuuuu")
+	}
+
+}
