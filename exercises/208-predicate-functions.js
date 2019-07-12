@@ -131,12 +131,12 @@ function isCapitalCity(state, city) {
         Wisconsin: 'Madison',
         Missouri: 'Jefferson City',    
         Wyoming: 'Cheyenne'
-    };
+    }
 
     let state = Object.keys(capitals)
-    let city = capitals[state];
+    let city = Object.values(capitals)
 
-    if(capitals[state] === city && ) {
+    if(capitals[state] === city) {
         return true
     } else {
         return false
@@ -145,3 +145,4 @@ function isCapitalCity(state, city) {
 
     
 }
+
