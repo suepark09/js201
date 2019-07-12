@@ -11,7 +11,13 @@ function max(array) {
 // the sum of the numbers.
 // Example:
 // sumNumbers([1, 4, 8]) --> 13
+function sumNumbers(array) {
+	let sum = 0;
+	for (let i = 0; i < array.length; i++) {
+  	return sum += array[i]
+}
 
+//DOUBLE CHECK THIS ONE******************
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,7 +28,12 @@ function max(array) {
 // positives([1, 2, 3]) --> [1, 2, 3]
 // positives([-1, -2, -3]) --> []
 
-
+function positives(array) {
+    for(let i = 0; i <= array.length; i++) {
+        let positiveNumbers = array[i] > 0;
+        return array.filter(positiveNumbers)
+    }
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

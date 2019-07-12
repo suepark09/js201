@@ -24,26 +24,23 @@ function reverse (string) {
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
 
-for(let i =0; i <= string.length; i++) {
-
-}
-
-
-
+-make string into array 
+-find length of a word
+-length of a word should be greater than other array items
 
 
 function findLongestWord(string) {
-    let stringSplit = string.split(" ")
-    let longestWordCount = 0
+    let array = string.split(" ")    // ["i", 'am', 'groot']
 
-    for (let i = 0; i <= stringSplit.length; i++) {
-        if (stringSplit[i].length > longestWordCount) {
-            longestWordCount = stringSplit[i].length
-
+   for(let i = 0; i <= array.length; i++) {
+        let word = array[i]
+        let wordLength =  word.length
+        let largestWord = ""
+        let largestwordLength = largestword.length
+        if (largestwordLength > wordLength) {
+            return largestWord
         }
     }
-
-    
 
 }
 
@@ -55,8 +52,16 @@ function findLongestWord(string) {
 // Example:
 // nicer('mom get the heck in here and bring me a darn sandwich.')
 // > 'mom get the in here and bring me a sandwich.'
-function nicer() {
+function nicer(str) {
+    let words = ['heck', 'darn', 'dang', 'crappy']
+    let newStr = str
+
+    for(let i = 0; i <= ) {
+    str.replace()
+    }
     
+
+
 }
 
 
@@ -70,7 +75,23 @@ function nicer() {
 // capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
 function capitalizeAll (sentence) {
 
+    let sentenceArray = sentence.split(" ")
+    for(let i = 0; i <= sentenceArray.length; i++) {
+        let word = sentenceArray[i];
+        let newSentence = [];
+
+        function capitalizeWord(word) {
+            word.charAt(0).toUpperCase() + word.slice(1)
+        }
+
+        sentenceArray.forEach(capitalizeWord(word) {
+            newSentence.push(word)
+            return newSentence.join(" ")
+        })
+                //create function that capitalizes a word and then apply it to each value in the array
+    }
 }
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,3 +104,6 @@ function capitalizeAll (sentence) {
 // split('a-b-c', '-') --> ['a', 'b', 'c']
 // split('APPLExxBANANAxxCHERRY', 'xx') --> ['APPLE', 'BANANA', 'CHERRY']
 // split('xyz', 'r') --> ['xyz']
+//use find and replace
+
+

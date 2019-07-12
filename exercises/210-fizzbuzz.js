@@ -10,9 +10,20 @@
 // fizzbuzz(3) --> '..fizz'
 // fizzbuzz(15) --> '..fizz.buzzfizz..fizzbuzz.fizz..fizzbuzz'
 function fizzbuzz(num) {
+    let array = [];
    for (let i = 1; i <= num; i++) {
-        if (num % 3 == 0 && num & 5 == 0) {
-            return "fizz"
+        if (num % 3 !== 0 && num % 5 !== 0) {
+            array.push(".")
+        }  if (num % 3 === 0 && num % 5 !==0) {
+            array.push("fizz")
         }
    }
+}
+
+function fizzbuzz(num) {
+    let str = "";
+
+        
+    
+    return array
 }

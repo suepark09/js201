@@ -14,3 +14,22 @@
 // Examples:
 // leetspeak('Leet') --> "l337"
 // leetspeak('ORANGE') --> "0r4n63"
+function leetspeak(str) {
+
+    let convert = {
+        A: 4,
+        E: 3,
+        G: 6,
+        I: 1,
+        O: 0,
+        S: 5,
+        T: 7
+    }
+
+    for(let i = 0; i <= str.length; i++) {
+        return str.replace(convert[i])
+    }
+
+    
+
+}

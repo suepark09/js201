@@ -17,6 +17,8 @@ function longvowels(str) {
 	return str.replace("oo", "ooooo")
 	} else if (str.includes("uu") === true) {
 	return str.replace("uu", "uuuuu")
-	}
+	} else {
+        return str
+    }
 
 }
