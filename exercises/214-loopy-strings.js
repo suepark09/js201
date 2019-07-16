@@ -24,24 +24,19 @@ function reverse (string) {
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
 
--make string into array 
--find length of a word
--length of a word should be greater than other array items
+function longestWord(str) {
+    let array = str.split(" ");
+    let longestWordLength = 0;
+    let longestWord = null; 
+	
+	for(let i = 0; i < array.length; i++) {
 
-
-function findLongestWord(string) {
-    let array = string.split(" ")    // ["i", 'am', 'groot']
-
-   for(let i = 0; i <= array.length; i++) {
-        let word = array[i]
-        let wordLength =  word.length
-        let largestWord = ""
-        let largestwordLength = largestword.length
-        if (largestwordLength > wordLength) {
-            return largestWord
-        }
+		if(array[i].length > longestWordLength) {
+        longestWordLength = array[i].length;
+        longestWord = array[i];
+        } 
     }
-
+    return longestWord;
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,12 +48,27 @@ function findLongestWord(string) {
 // nicer('mom get the heck in here and bring me a darn sandwich.')
 // > 'mom get the in here and bring me a sandwich.'
 function nicer(str) {
-    let words = ['heck', 'darn', 'dang', 'crappy']
-    let newStr = str
+  
+    let strArray = str.split(" ")
 
-    for(let i = 0; i <= ) {
-    str.replace()
+    for(let i = 0; i <= words.length; i++ ) {
+        let meanWords = ['heck', 'darn', 'dang', 'crappy']
+        let meanWord = meanWords[i]
+
+        for(let j = 0; j <= strArray.length; j++) {
+            let strWord = strArray[j]
+
+            if(strWord === meanWords) {
+                let newArray = [];
+                newArray = strArray.push("pewp")
+
+            }
+    
+        }
+        return newArray
     }
+
+    
     
 
 
