@@ -83,23 +83,17 @@ function nicer(str) {
 // Examples:
 // capitalizeAll('hello world') --> 'Hello World'
 // capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
-function capitalizeAll (sentence) {
+function capitalizeAll(str) {
+    let array = str.split(" ");
+    let capitalizedWord = null; 
+    let newSentence = [];
+    
 
-    let sentenceArray = sentence.split(" ")
-    for(let i = 0; i <= sentenceArray.length; i++) {
-        let word = sentenceArray[i];
-        let newSentence = [];
-
-        function capitalizeWord(word) {
-            word.charAt(0).toUpperCase() + word.slice(1)
-        }
-
-        sentenceArray.forEach(capitalizeWord(word) {
-            newSentence.push(word)
-            return newSentence.join(" ")
-        })
-                //create function that capitalizes a word and then apply it to each value in the array
+    for(let i = 0; i < array.length; i++) {
+        capitalizedWord = array[i].charAt(0).toUpperCase() + array[i].slice(1); 
+        newSentence.push(capitalizedWord);
     }
+    return newSentence
 }
 
 
